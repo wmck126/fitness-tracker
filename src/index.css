@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.loginForm{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.loginbttn {
+  width: 60px;
+  margin: 10px;
+}
+
+.createloginbttn {
+  width: 100px;
+  margin: 10px;
+}
+
+.loginbttns{
+  flex-direction: row;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcomebtn {
+  width: 70px;
+  height: 40px;
+}

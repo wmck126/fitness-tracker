@@ -21,6 +21,7 @@ export default function Login() {
   const LogOut = () => {
     setUser({username: ""})
     setError("")
+    navigate("/")
   }
 
   const Login = details => {

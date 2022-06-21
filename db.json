@@ -13,30 +13,16 @@
       "name": "Mike"
     },
     {
-      "id": 3,
-      "username": "hi",
-      "password": "bye",
-      "name": "Charles"
-    },
+      "username": "tt",
+      "password": "yy",
+      "id": 3
+    }
+  ],
+  "excercises": [
     {
-      "username": "wmck",
-      "password": "mck",
-      "id": 4
-    },
-    {
-      "username": "test123",
-      "password": "test456",
-      "id": 5
-    },
-    {
-      "username": "sugar",
-      "password": "spice",
-      "id": 6
-    },
-    {
-      "username": "123",
-      "password": "456",
-      "id": 7
+      "arm": "Bench Press",
+      "leg": "Squat",
+      "cardio": "Run"
     }
   ]
 }

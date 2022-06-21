@@ -33,8 +33,10 @@ function LoginForm({login, error, createLogin}) {
                 name="password"/>
               
             </div>
-            <button type="submit">Login</button>
-            <button type="submit" onClick={createLogin}>Create Login</button>
+            <div className='loginbttns'>
+            <button type="submit" className='loginbttn'>Login</button>
+            <button type="submit" className='createloginbttn' onClick={createLogin}>Create Login</button>
+            </div>
           </form>
       </div>
     )

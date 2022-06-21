@@ -7,9 +7,9 @@ export default function Welcome() {
 
 
   return(
-    <div>
+    <div className="welcome">
     <h2>Welcome to the fitness tracker app</h2>
-    <button onClick={handleLoginClick}>Login</button>
+    <button className="welcomebtn" onClick={handleLoginClick}>Login</button>
     </div>
   )
 }

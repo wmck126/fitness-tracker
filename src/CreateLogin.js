@@ -8,6 +8,7 @@ export default function CreateLogin() {
 
   const navigate = useNavigate()
   
+  const refresh = () => window.location.reload()
 
     function handleSubmit(e) {
       e.preventDefault() 
@@ -21,7 +22,7 @@ export default function CreateLogin() {
           })
           .then(r => r.json())
           .then((newLogin) => setLoginInfo(newLogin))
-          .then(navigate("/login").location.reload())
+          .then(navigate("/"))
       }
     
 
