@@ -1,10 +1,42 @@
 {
-  "credentials" :[
+  "credentials": [
     {
-      "id" : 1,
+      "id": 1,
       "username": "test",
       "password": "test",
-      "name" : "Ward"
+      "name": "Ward"
+    },
+    {
+      "id": 2,
+      "username": "ward",
+      "password": "mck",
+      "name": "Mike"
+    },
+    {
+      "id": 3,
+      "username": "hi",
+      "password": "bye",
+      "name": "Charles"
+    },
+    {
+      "username": "wmck",
+      "password": "mck",
+      "id": 4
+    },
+    {
+      "username": "test123",
+      "password": "test456",
+      "id": 5
+    },
+    {
+      "username": "sugar",
+      "password": "spice",
+      "id": 6
+    },
+    {
+      "username": "123",
+      "password": "456",
+      "id": 7
     }
   ]
 }

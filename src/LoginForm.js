@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Login from './Login'
 
 function LoginForm({login, error, createLogin}) {
   const [details, setDetails] = useState({username: "", password:""})

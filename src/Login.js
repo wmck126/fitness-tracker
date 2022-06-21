@@ -15,36 +15,37 @@ export default function Login() {
       .then(data => setCredentials(data))
     }, [])
 
-
-  
-
   const navigate = useNavigate()
   const handleCreateLoginClick = useCallback(() => navigate('/createlogin', {replace:true}, [navigate]))
 
-  const Login = details => {
-    console.log(details)
-    if (details.username == credentials[0].username && details.password == credentials[0].password) {
-      console.log("Logged in!")
-      
-      setUser({
-        username: details.username
-      })
-    } else {
-      setError("Details do not match")
-    }
+  const LogOut = () => {
+    setUser({username: ""})
+    setError("")
   }
 
-  const LogOut = () => {
-    console.log("Logout")
-    setUser({username: ""})
+  const Login = details => {
+    for(let i=0; i<credentials.length; i++) {
+      if (details.username == credentials[i].username && details.password == credentials[i].password) {
+        console.log("Logged in!")
+        setError("")
+        setUser({
+          username: details.username,
+        })
+        console.log(details.username)
+        
+      } else {
+        setError("Details do not match")
+      }
+    } 
   }
+  
 
 
   return (
     <div>
       {(user.username != "") ? (
         <div className="welcome">
-          <h2>Welcome, <span>{credentials[0].name}</span></h2>
+          <h2>Welcome, <span>{user.username}</span></h2>
           <button onClick={LogOut}>Logout</button>
         </div>
       )
@@ -53,4 +54,4 @@ export default function Login() {
       )}
     </div>
   )
-}
+} 
