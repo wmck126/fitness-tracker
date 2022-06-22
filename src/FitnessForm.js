@@ -1,22 +1,14 @@
 import React from 'react'
 
-function FitnessForm({dumbell, squat, run}) {
-  console.log(dumbell)
+function FitnessForm({sets, description, exercise, reps, id}) {
+  
   return (
     <div>
-      <h1>FitnessForm</h1>
-      <form>
-        <label>{dumbell}</label>
-        <input type="text"></input>
-      </form>
-      <form>
-        <label>{squat}</label>
-        <input type="text"></input>
-      </form>
-      <form>
-        <label>{run}</label>
-        <input type="text"></input>
-      </form>
+        <h3 key={id}>{exercise}</h3>
+        <p>{description}</p>
+        <span>{sets} sets of {reps} reps</span>
+        <button>Completed!</button>
+        <button>Edit</button>
     </div>
   )
 }

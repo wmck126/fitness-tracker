@@ -10,7 +10,7 @@ export default function Login() {
   const [credentials, setCredentials] = useState([])
   
     useEffect(() => {
-      fetch("http://localhost:8000/credentials")
+      fetch("http://localhost:8001/credentials")
       .then(r => r.json())
       .then(data => setCredentials(data))
     }, [])
@@ -40,14 +40,14 @@ export default function Login() {
     } 
   }
   
-
-
   return (
     <div>
       {(user.username != "") ? (
         <div className="welcome">
           <h2>Welcome, <span>{user.username}</span></h2>
+          <p>Redirecting you to your workout...</p>
           <button onClick={LogOut}>Logout</button>
+          {setTimeout(() => navigate("/exercise"), 3000)}
         </div>
       )
       : (

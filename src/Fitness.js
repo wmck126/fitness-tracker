@@ -1,18 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import FitnessForm from './FitnessForm'
+import Navbar from './Navbar';
 
-function Fitness() {
-  const [exercises, setExercise] = useState([])
+function Fitness({ exercises }) {
+  
 
-  useEffect(() => {
-    fetch("http://localhost:8000/excercises")
-    .then(r => r.json())
-    .then(data => setExercise(data))
-  },[]  )
+  
+
+  const navigate = useNavigate()
   console.log(exercises)
   return (
     <div>
-      {exercises.map((data) => <FitnessForm dumbell={data.arm} squat={data.leg} run={data.cardio}/>)}
+      <Navbar />
+      {exercises.map((data) => (
+        <FitnessForm 
+          id={data.id} 
+          exercise={data.exercise} 
+          description={data.description} 
+          sets={data.sets} 
+          reps={data.reps}
+          />))}
+      <button 
+        onClick={() => navigate("/")}
+        className="logoutbtnfitness"
+        >Logout</button>
     </div>
   )
 }

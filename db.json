@@ -20,9 +20,39 @@
   ],
   "excercises": [
     {
-      "arm": "Bench Press",
-      "leg": "Squat",
-      "cardio": "Run"
+      "exercise": "Pushup",
+      "description": "",
+      "sets": "3",
+      "reps": "10",
+      "id": 1
+    },
+    {
+      "exercise": "Pullup",
+      "description": "",
+      "sets": "3",
+      "reps": "8",
+      "id": 2
+    },
+    {
+      "exercise": "Squat",
+      "description": "",
+      "sets": "3",
+      "reps": "10",
+      "id": 3
+    },
+    {
+      "exercise": "Bench Press",
+      "description": "",
+      "sets": "3",
+      "reps": "10",
+      "id": 4
+    },
+    {
+      "exercise": "Dumbell Curl",
+      "description": "Lift dumbell with biceps",
+      "sets": "3",
+      "reps": "10",
+      "id": 5
     }
   ]
 }
