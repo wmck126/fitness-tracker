@@ -24,35 +24,48 @@
       "description": "",
       "sets": "3",
       "reps": "10",
-      "id": 1
+      "id": 1,
+      "action": "Pending"
     },
     {
       "exercise": "Pullup",
       "description": "",
       "sets": "3",
       "reps": "8",
-      "id": 2
+      "id": 2,
+      "action": "Pending"
     },
     {
       "exercise": "Squat",
       "description": "",
       "sets": "3",
       "reps": "10",
-      "id": 3
+      "id": 3,
+      "action": "Pending"
     },
     {
       "exercise": "Bench Press",
       "description": "",
       "sets": "3",
       "reps": "10",
-      "id": 4
+      "id": 4,
+      "action": "Pending"
     },
     {
       "exercise": "Dumbell Curl",
       "description": "Lift dumbell with biceps",
       "sets": "3",
       "reps": "10",
-      "id": 5
+      "id": 5,
+      "action": "Pending"
+    },
+    {
+      "exercise": "Jumping Jacks",
+      "description": "X Like Movement",
+      "sets": "5",
+      "reps": "20",
+      "id": 6,
+      "action": "Pending"
     }
   ]
 }

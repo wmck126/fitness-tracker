@@ -19,10 +19,18 @@ function Navbar() {
 
   return (
     <div className='navbar'>
-      <h3>Fitness Tracker</h3>
-      <button onClick={onClickWorkout}>Workout</button>
-      <button onClick={onClickCreate}>Create Workout</button>
-      <button onClick={onClickComplete}>Completed excercises</button>
+      <h3 className='nav-title'>Fitness Tracker</h3>
+      <div className='lis-nav'>
+        <ul>
+          <li onClick={onClickWorkout}>Workout</li>
+          <li onClick={onClickCreate}>Create Exercise</li>
+          <li onClick={onClickComplete}>Completed Excercises</li>
+          <li 
+          onClick={() => navigate("/")}
+          className="logoutbtnfitness"
+          >Logout</li>
+        </ul>
+      </div>
     </div>
   )
 }

@@ -13,7 +13,7 @@ export default function CreateLogin() {
     function handleSubmit(e) {
       e.preventDefault() 
       
-        fetch('http://localhost:8000/credentials', {
+        fetch('http://localhost:8001/credentials', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

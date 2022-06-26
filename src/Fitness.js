@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import React from 'react'
 import FitnessForm from './FitnessForm'
 import Navbar from './Navbar';
 
-function Fitness({ exercises }) {
+function Fitness({ exercises, onCompleted, current }) {
   
 
   
-
-  const navigate = useNavigate()
-  console.log(exercises)
+  
   return (
     <div>
       <Navbar />
@@ -20,11 +17,8 @@ function Fitness({ exercises }) {
           description={data.description} 
           sets={data.sets} 
           reps={data.reps}
+          action={data.action}
           />))}
-      <button 
-        onClick={() => navigate("/")}
-        className="logoutbtnfitness"
-        >Logout</button>
     </div>
   )
 }

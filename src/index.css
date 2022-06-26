@@ -47,3 +47,136 @@ code {
   width: 70px;
   height: 40px;
 }
+
+.navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  
+}
+
+.nav-title{
+  margin-left: 10px;
+  text-decoration: underline;
+  font-weight:1000;
+}
+
+.main {
+  margin-left: 300px;
+  margin-top: 50px;
+  
+}
+
+.buttons-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 30px;
+
+}
+
+.buttons-main {
+  margin-top: 10px;
+}
+
+.buttons {
+  border-radius: 10px;
+  background-color: white; 
+  border: 2px solid black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 1.5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: black;
+  color: white
+}
+.create-exercise {
+  margin-left: 300px;
+}
+
+.completed-exercise {
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.completed-title{
+  margin-left: 300px;
+}
+
+.create-label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.create-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px
+}
+
+.create-submit-bttn{
+  border-radius: 10px;
+  background-color: white; 
+  border: 2px solid black;
+  color: black;
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 1.5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.create-submit-bttn:hover {
+  background-color: black;
+  color: white
+}
+
+.fitness-form{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+li {
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 25px;
+  padding: 7px 14px;
+  transition-duration: 0.4s;
+}
+
+li:hover {
+  color: white;
+  background-color: grey;
+  text-decoration: underline;
+}
+
+.logoutbtnfitness {
+  position: absolute;
+  bottom: 5%;
+}

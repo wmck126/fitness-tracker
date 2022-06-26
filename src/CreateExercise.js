@@ -32,27 +32,32 @@ function CreateExercise({ onAddExercise }) {
   return (
     <div>
       <Navbar />
-      <h2>Create an exercise</h2>
-      <h4>Fill in the form below to add an exercise to the list</h4>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Exercise</label>
-        <input type="text" required onChange={(e) => setExercise(e.target.value)}/>
-        </div>
-        <div>
-        <label>Description</label>
-        <input type="text" required onChange={(e) => setDescription(e.target.value)}/>
-        </div>
-        <div>
-          <label>Sets</label>
-        <input type="text" required onChange={(e) => setSets(e.target.value)}/>
-        </div>
-        <div>
-          <label>Reps</label>
-        <input type="text" required onChange={e => setReps(e.target.value)}/>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      <div  className='create-exercise'>
+        <h2>Create an exercise</h2>
+        <h4>Fill in the form below to add an exercise to the list</h4>
+          <form onSubmit={handleSubmit} >
+            <div className='className='fitness-form>
+            <div>
+              <label className='create-label'>Exercise</label>
+              <input className='create-input' type="text" required onChange={(e) => setExercise(e.target.value)}/>
+            </div>
+            <div>
+              <label className='create-label'>Description</label>
+              <input className='create-input' type="text" required onChange={(e) => setDescription(e.target.value)}/>
+            </div>
+            <div>
+              <label className='create-label'>Sets</label>
+              <input className='create-input' type="text" required onChange={(e) => setSets(e.target.value)}/>
+            </div>
+            <div>
+              <label className='create-label'>Reps</label>
+              <input className='create-input' type="text" required onChange={e => setReps(e.target.value)}/>
+            </div>
+            </div>
+            <button className='create-submit-bttn' type="submit">Submit</button>
+          </form>
+        
+    </div>
     </div>
   )
 }
