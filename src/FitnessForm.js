@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FitnessForm({sets, description, exercise, reps, id, completed}) {
+function FitnessForm({sets, description, exercise, reps, id, onComplete, img}) {
 
   function handleCompleted(e) {
     e.preventDefault()
@@ -14,13 +14,15 @@ function FitnessForm({sets, description, exercise, reps, id, completed}) {
         })
       }))
       .then(r => r.json())
+      .then(data => onComplete(data))
   }
   
   return (
     <div className='main'>
-        <h3 key={id}>{exercise}</h3>
-        <p>{description}</p>
-        <span>{sets} sets of {reps} reps</span>
+        <h3 key={id} className='exercise-title'>{exercise}</h3>
+        <img src={img} alt="Exercise image" className='exercise-image'/>
+        <p className='exercise-description'>{description}</p>
+        <span className='exercise-sets'>{sets} sets of {reps} reps</span>
         <div className='buttons-main'>
           <button className='buttons' onClick={handleCompleted}>Completed!</button>
           {/* <button className='buttons'>Edit</button> */}

@@ -7,6 +7,7 @@ function CreateExercise({ onAddExercise }) {
   const [exercise, setExercise] = useState("")
   const [description, setDescription] = useState("")
   const [sets, setSets] = useState("")
+  const [img, setImg] = useState("")
   const navigate = useNavigate()
 
   function handleSubmit(e) {
@@ -16,6 +17,8 @@ function CreateExercise({ onAddExercise }) {
         "description": description,
         "sets": sets,
         "reps": reps,
+        "action": "Pending",
+        "img": img,
       }
       fetch("http://localhost:8001/excercises", {
         method:"POST",
@@ -52,6 +55,13 @@ function CreateExercise({ onAddExercise }) {
             <div>
               <label className='create-label'>Reps</label>
               <input className='create-input' type="text" required onChange={e => setReps(e.target.value)}/>
+            </div>
+            <div>
+              <label className='create-label'>Paste a webURL image</label>
+              <input className='create-input' 
+                type="text" 
+                onChange={e => setImg(e.target.value)} 
+                placeholder="www.example.png"/>
             </div>
             </div>
             <button className='create-submit-bttn' type="submit">Submit</button>

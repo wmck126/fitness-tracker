@@ -65,10 +65,30 @@ code {
   font-weight:1000;
 }
 
+.main-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width:auto;
+  grid-gap: 10px;
+  margin-left: 250px;
+}
 .main {
-  margin-left: 300px;
-  margin-top: 50px;
-  
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.exercise-image {
+  width: 100%;
+  height: 50%;
+}
+
+.exercise-sets{
+  text-align: center;
+}
+
+.exercise-title {
+  text-align: center;
 }
 
 .buttons-nav {
@@ -76,12 +96,13 @@ code {
   flex-direction: column;
   width: 100px;
   gap: 30px;
-
 }
 
 .buttons-main {
   margin-top: 10px;
+  text-align: center;
 }
+
 
 .buttons {
   border-radius: 10px;

@@ -30,6 +30,10 @@ function App() {
     setExercise([...exercises, newExercise])
   } 
 
+  function handleMoveExercise(completedExercise) {
+    const updatedList = exercises.filter((done) => done.action !== completedExercise.action)
+    setExercise(updatedList)
+  }
 
   const exercisesToDisplay = exercises.filter((exercise) => exercise.action === "Pending")
   
@@ -42,7 +46,7 @@ function App() {
               <Route path="/" element={<Welcome />} />
               <Route path="/login" element={<Login />}/>
               <Route path="/createlogin" element={<CreateLogin />}/>
-              <Route path="/exercise" element={<Fitness exercises={exercisesToDisplay} />} />
+              <Route path="/exercise" element={<Fitness exercises={exercisesToDisplay} onComplete={handleMoveExercise}/>} />
               <Route path="/create" element={<CreateExercise onAddExercise={handleAddExercise}/>} />
               <Route path="/completed" element={<MapCompletedExercise completed={completedExercise} exercise={setExercise}/>} />
           </Routes>

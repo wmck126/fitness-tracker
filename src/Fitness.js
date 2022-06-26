@@ -2,7 +2,7 @@ import React from 'react'
 import FitnessForm from './FitnessForm'
 import Navbar from './Navbar';
 
-function Fitness({ exercises, onCompleted, current }) {
+function Fitness({ exercises, onComplete }) {
   
 
   
@@ -10,6 +10,7 @@ function Fitness({ exercises, onCompleted, current }) {
   return (
     <div>
       <Navbar />
+      <div className='main-layout'>
       {exercises.map((data) => (
         <FitnessForm 
           id={data.id} 
@@ -18,7 +19,10 @@ function Fitness({ exercises, onCompleted, current }) {
           sets={data.sets} 
           reps={data.reps}
           action={data.action}
+          img={data.img}
+          onComplete={onComplete}
           />))}
+          </div>
     </div>
   )
 }
