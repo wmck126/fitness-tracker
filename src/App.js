@@ -7,6 +7,15 @@ import Fitness from './Fitness';
 import CreateExercise from './CreateExercise';
 import MapCompletedExercise from './MapCompletedExercise';
 
+
+/*
+Need to work on:
+- Login page css
+- Making elements move between completed/pending without page refresh
+- Removing redirect timer
+- Additional styling/css so not so b&w
+*/
+
 function App() {
 
   const [exercises, setExercise] = useState([])
