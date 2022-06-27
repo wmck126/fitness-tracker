@@ -201,3 +201,9 @@ li:hover {
   position: absolute;
   bottom: 5%;
 }
+
+.loading-img {
+  align-items: center;
+  margin-bottom: 20px;
+  width: 40px;
+}

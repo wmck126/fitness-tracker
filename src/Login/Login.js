@@ -8,6 +8,7 @@ export default function Login() {
   const [user, setUser] = useState({username: ""})
   const [isError, setError] = useState("")
   const [credentials, setCredentials] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
   
     useEffect(() => {
       fetch("http://localhost:8001/credentials")
@@ -22,6 +23,7 @@ export default function Login() {
     setUser({username: ""})
     setError("")
     navigate("/")
+
   }
 
   const Login = details => {
@@ -34,18 +36,24 @@ export default function Login() {
         })
         console.log(details.username)
         
+        
       } else {
         setError("Details do not match")
       }
     } 
   }
 
+  
+  
+
+  
   return (
     <div>
       {(user.username != "") ? (
         <div className="welcome">
           <h2>Welcome, <span>{user.username}</span></h2>
           <p>Redirecting you to your workout...</p>
+          <img src="https://i.imgur.com/7CDt2JY.gif" className="loading-img"/>
           <button onClick={LogOut}>Logout</button>
           {setTimeout(() => navigate("/exercise"), 3000)}
         </div>
