@@ -11,11 +11,6 @@
       "username": "ward",
       "password": "mck",
       "name": "Mike"
-    },
-    {
-      "username": "tt",
-      "password": "yy",
-      "id": 3
     }
   ],
   "excercises": [
@@ -25,7 +20,7 @@
       "sets": "3",
       "reps": "10",
       "id": 1,
-      "action": "Pending",
+      "action": "Completed",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Liegestuetz02_ani_fcm.gif/440px-Liegestuetz02_ani_fcm.gif"
     },
     {
@@ -34,7 +29,7 @@
       "sets": "3",
       "reps": "8",
       "id": 2,
-      "action": "Pending",
+      "action": "Completed",
       "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/u05-bottomhalfwaytop-ism-mh310118-1558552383.jpg?crop=1.00xw:0.812xh;0,0.0812xh&resize=480:*"
     },
     {
@@ -43,7 +38,7 @@
       "sets": "3",
       "reps": "10",
       "id": 3,
-      "action": "Pending",
+      "action": "Completed",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Squats.svg/1600px-Squats.svg.png"
     },
     {

@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <div className='navbar'>
-      <h3 className='nav-title'>Fitness Tracker</h3>
+      <h1 className='nav-title'>Fitness Tracker</h1>
       <div className='lis-nav'>
         <ul>
           <li onClick={onClickWorkout}>Workout</li>

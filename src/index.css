@@ -12,6 +12,57 @@ code {
     monospace;
 }
 
+	
+h1 {
+  font-family: 'Allan', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+h3 {
+  font-family: 'Cardo', Georgia, Times, serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Cardo', Georgia, Times, serif;
+  font-size: 40px;
+}
+
+h4{ 
+  font-family: 'Cardo', Georgia, Times, serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Cardo', Georgia, Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+input {
+  font-family: 'Cardo', Georgia, Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+button {
+  font-family: 'Cardo', Georgia, Times, serif
+}
+
+img {
+  background-color: white;
+}
+
+/* button {
+  border: 5px solid black;
+} */
+
+.completed-title {
+  text-align: center;
+  font-size: 50px;
+}
+
 .loginForm{
   display: flex;
   justify-content: center;
@@ -19,33 +70,88 @@ code {
   text-align: center;
   gap: 10px;
   align-items: center;
+  margin-top: 10%;
+}
+
+.login-label{
+  margin-right: 10px;
+  display: flex;
+  justify-content: left;
 }
 
 .loginbttn {
-  width: 60px;
+  width: 80px;
   margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  background-color: #004643;
+  color: white;
+}
+
+.loginbttn:hover {
+  background-color: #e16162;
+  border: 2px solid black;
+  border-radius: 10px
 }
 
 .createloginbttn {
   width: 100px;
   margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  background-color: #004643;
+  color: white;
+}
+
+.createloginbttn:hover {
+  background-color: #e16162;
+  border: 2px solid black;
+  border-radius: 10px
 }
 
 .loginbttns{
   flex-direction: row;
   align-items: center;
   row-gap: 10px;
+  
+}
+
+.login-input {
+  background-color: #004643;
+  color: #fffffe;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px
 }
 
 .welcome {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 10%
 }
 
 .welcomebtn {
-  width: 70px;
-  height: 40px;
+  width: 80px;
+  margin: 10px;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  background-color: #004643;
+  color: white;
+}
+
+.welcomebtn:hover {
+  background-color: #e16162;
+  border: 2px solid black;
+  border-radius: 10px
 }
 
 .navbar {
@@ -63,6 +169,7 @@ code {
   margin-left: 10px;
   text-decoration: underline;
   font-weight:1000;
+  
 }
 
 .main-layout{
@@ -71,11 +178,23 @@ code {
   width:auto;
   grid-gap: 10px;
   margin-left: 250px;
+  padding-left: 2% 
 }
+
+
 .main {
   display: flex;
   flex-direction: column;
   width: 500px;
+  background-color: #004643;
+  border-radius: 25px;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;  
+}
+
+html {
+  background-color: #abd1c6;
 }
 
 .exercise-image {
@@ -85,10 +204,16 @@ code {
 
 .exercise-sets{
   text-align: center;
+  color: #fffffe;
 }
 
 .exercise-title {
   text-align: center;
+  color: #fffffe;
+}
+
+.exercise-description {
+  color: #abd1c6;
 }
 
 .buttons-nav {
@@ -106,9 +231,9 @@ code {
 
 .buttons {
   border-radius: 10px;
-  background-color: white; 
+  background-color: #abd1c6; 
   border: 2px solid black;
-  color: black;
+  color: #001e1d;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -120,20 +245,25 @@ code {
 }
 
 .buttons:hover {
-  background-color: black;
+  background-color: #f9bc60;
   color: white
 }
 .create-exercise {
   margin-left: 300px;
+  padding-bottom: 25%;
+  padding-top: 15px;
+  padding-left: 5%
 }
 
 .completed-exercise {
-  margin-left: 300px;
-  margin-top: 50px;
+  margin-left: 200px;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
 .completed-title{
-  margin-left: 300px;
+  margin-left: 200px;
+  text-align: center
 }
 
 .create-label {
@@ -145,15 +275,21 @@ code {
 .create-input {
   display: flex;
   flex-direction: column;
-  margin-top: 5px
+  margin-top: 5px;
+  background-color: #004643;
+  border: none;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fffffe;
 }
 
 .create-submit-bttn{
   border-radius: 10px;
-  background-color: white; 
+  background-color: #f9bc60; 
   border: 2px solid black;
-  color: black;
-  padding: 7px 14px;
+  color: #001e1d;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -171,8 +307,11 @@ code {
 .fitness-form{
   display: flex;
   flex-direction: column;
-  border: solid 1px black;
+  justify-content: center;
+  
 }
+
+
 
 ul {
   padding: 0;
@@ -185,15 +324,16 @@ ul {
 li {
   margin-top: 5px;
   cursor: pointer;
-  background-color: white;
+  background-color: #004643;
   border-radius: 25px;
   padding: 7px 14px;
   transition-duration: 0.4s;
+  color:#fffffe;
 }
 
 li:hover {
   color: white;
-  background-color: grey;
+  background-color: #e16162;
   text-decoration: underline;
 }
 
@@ -206,4 +346,8 @@ li:hover {
   align-items: center;
   margin-bottom: 20px;
   width: 40px;
+}
+
+.timeout {
+  color: #abd1c6;
 }

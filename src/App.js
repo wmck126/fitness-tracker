@@ -10,10 +10,11 @@ import MapCompletedExercise from './MapCompletedExercise';
 
 /*
 Need to work on:
-- Login page css
 - Making elements move between completed/pending without page refresh
 - Removing redirect timer
 - Additional styling/css so not so b&w
+- Add data tied to users credentials
+- On logout, set all exercises to pending
 */
 
 function App() {

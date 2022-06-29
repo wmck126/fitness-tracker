@@ -29,7 +29,7 @@ export default function CreateLogin() {
   
   return (
     <div className="createLoginForm">
-      <h2>Create Login</h2>
+      <h1>Create Login</h1>
       <form onSubmit={handleSubmit}>
         <div className="createUname">
           <label>Username: </label>

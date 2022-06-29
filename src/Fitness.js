@@ -8,7 +8,7 @@ function Fitness({ exercises, onComplete }) {
   
   
   return (
-    <div>
+    <div className='app'>
       <Navbar />
       <div className='main-layout'>
       {exercises.map((data) => (
@@ -21,6 +21,7 @@ function Fitness({ exercises, onComplete }) {
           action={data.action}
           img={data.img}
           onComplete={onComplete}
+          
           />))}
           </div>
     </div>

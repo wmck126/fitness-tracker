@@ -15,22 +15,27 @@ function LoginForm({login, error, createLogin}) {
           <form className="loginForm" onSubmit={handleSubmit}>
             <h2>Login</h2>
             {(error !== "") ? (<div className='error'>{error}</div>) : ""}
-            <div className="uname">
-              <label>Username </label>
+            <div >
               <input 
                 type='text' required 
                 onChange={e => setDetails({...details, username: e.target.value})} 
                 value={details.username} 
                 id="username" 
-                name="username"/>
+                name="username"
+                placeholder='Username'
+                className="login-input"
+                />
             </div>
-            <div className="pword">
-              <label>Password </label>
+            <div>
+              
               <input type='password' required  
                 onChange={e => setDetails({...details, password: e.target.value})}
                 value={details.password}
                 id="password" 
-                name="password"/>
+                name="password"
+                placeholder='Password'
+                className="login-input"
+                />
               
             </div>
             <div className='loginbttns'>

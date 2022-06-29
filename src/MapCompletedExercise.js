@@ -16,7 +16,7 @@ console.log(isCompleted())
   return (
     <div>
       <Navbar/>
-      <h2 className='completed-title'>Completed Exercises</h2>
+      <h1 className='completed-title'>Completed Exercises</h1>
       <div className='completed-exercise'>
       { isCompleted()
       ? 'Start completing some exercises!' 
@@ -29,6 +29,7 @@ console.log(isCompleted())
             sets={data.sets} 
             reps={data.reps}
             action={data.action}
+            img={data.img}
             />))}
           </div>
     </div>

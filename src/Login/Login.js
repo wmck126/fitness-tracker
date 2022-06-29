@@ -48,14 +48,16 @@ export default function Login() {
 
   
   return (
-    <div>
+    <div className='app'>
       {(user.username != "") ? (
         <div className="welcome">
-          <h2>Welcome, <span>{user.username}</span></h2>
+          <h1>Welcome, <span>{user.username}</span></h1>
           <p>Redirecting you to your workout...</p>
           <img src="https://i.imgur.com/7CDt2JY.gif" className="loading-img"/>
-          <button onClick={LogOut}>Logout</button>
+          <button onClick={LogOut} className='loginbttn'>Logout</button>
+          <div className="timeout">
           {setTimeout(() => navigate("/exercise"), 3000)}
+          </div>
         </div>
       )
       : (

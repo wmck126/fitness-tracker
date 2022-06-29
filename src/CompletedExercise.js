@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-function CompletedExercise({exercise, id, description, sets, reps, ex  }) {
+function CompletedExercise({exercise, id, description, sets, reps, ex, img  }) {
 
   function handlePending(e) {
     e.preventDefault()
@@ -19,19 +19,20 @@ function CompletedExercise({exercise, id, description, sets, reps, ex  }) {
   }
   
   return (
-    <div>
+    <div className='completed-exercise'>
       
       <Navbar />
       
-      <div className='completed-exercises'>
-            <h3 key={id}>{exercise}</h3>
-            <p>{description}</p>
-            <span>{sets} sets of {reps} reps</span>
-            <div className='buttons-main'>
-              <button className='buttons' onClick={handlePending}>Pending</button>
-              <button className='buttons'>Edit</button>
-            </div>
-      </div>
+      <div className='main'>
+        <h3 key={id} className='exercise-title'>{exercise}</h3>
+        <img src={img} alt="Exercise image" className='exercise-image'/>
+        <p className='exercise-description'>{description}</p>
+        <span className='exercise-sets'>{sets} sets of {reps} reps</span>
+        <div className='buttons-main'>
+          <button className='buttons' onClick={handlePending}>Send back to workout</button>
+          {/* <button className='buttons'>Edit</button> */}
+        </div>
+    </div>
     </div>
   )
 }
