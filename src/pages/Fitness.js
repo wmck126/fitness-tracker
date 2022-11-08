@@ -1,6 +1,6 @@
 import React from 'react'
-import FitnessForm from './FitnessForm'
-import Navbar from './Navbar';
+import FitnessForm from '../components/FitnessForm'
+import Navbar from '../components/Navbar';
 
 function Fitness({ exercises, onComplete }) {
   

@@ -11,6 +11,11 @@
       "username": "ward",
       "password": "mck",
       "name": "Mike"
+    },
+    {
+      "username": "trowt",
+      "password": "12345",
+      "id": 3
     }
   ],
   "excercises": [

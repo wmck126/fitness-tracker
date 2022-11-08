@@ -1,5 +1,5 @@
 import React from 'react'
-import CompletedExercise from './CompletedExercise'
+import CompletedExercise from '../pages/CompletedExercise'
 import Navbar from './Navbar'
 
 function MapCompletedExercise({completed, exercise}) {
@@ -12,7 +12,6 @@ const isCompleted = () => {
 }
 
 console.log(isCompleted())
-  console.log(completed)
   return (
     <div>
       <Navbar/>

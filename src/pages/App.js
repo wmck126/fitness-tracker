@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import Login from './Login/Login';
-import Welcome from './Login/Welcome';
+import Login from '../components/Login/Login';
+import Welcome from '../components/Login/Welcome';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CreateLogin from './Login/CreateLogin';
+import CreateLogin from '../components/Login/CreateLogin';
 import Fitness from './Fitness';
 import CreateExercise from './CreateExercise';
-import MapCompletedExercise from './MapCompletedExercise';
+import MapCompletedExercise from '../components/MapCompletedExercise';
 
 
 /*

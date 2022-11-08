@@ -28,7 +28,7 @@ export default function Login() {
 
   const Login = details => {
     for(let i=0; i<credentials.length; i++) {
-      if (details.username == credentials[i].username && details.password == credentials[i].password) {
+      if (details.username === credentials[i].username && details.password === credentials[i].password) {
         console.log("Logged in!")
         setError("")
         setUser({
@@ -49,7 +49,7 @@ export default function Login() {
   
   return (
     <div className='app'>
-      {(user.username != "") ? (
+      {(user.username !== "") ? (
         <div className="welcome">
           <h1>Welcome, <span>{user.username}</span></h1>
           <p>Redirecting you to your workout...</p>
