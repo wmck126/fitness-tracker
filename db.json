@@ -1,22 +1,6 @@
 {
   "credentials": [
-    {
-      "id": 1,
-      "username": "test",
-      "password": "test",
-      "name": "Ward"
-    },
-    {
-      "id": 2,
-      "username": "ward",
-      "password": "mck",
-      "name": "Mike"
-    },
-    {
-      "username": "trowt",
-      "password": "12345",
-      "id": 3
-    }
+    
   ],
   "excercises": [
     {
